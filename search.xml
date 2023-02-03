@@ -17,6 +17,25 @@
     
     
     <entry>
+      <title>使用hashcat攻击scrypt-hash</title>
+      <link href="/posts/38184.html"/>
+      <url>/posts/38184.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用hashcat攻击scrypt-hash"><a href="#使用hashcat攻击scrypt-hash" class="headerlink" title="使用hashcat攻击scrypt-hash"></a>使用hashcat攻击scrypt-hash</h1><p><strong>目的：学习这个是为了下一篇文章的爆破手机屏幕的图案密码做准备</strong></p><p><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/image-20230203144858271.png" alt="image-20230203144858271"></p><ol><li>首先你要攻击某一种hash，你首先要去hashcat查看一下是否支持</li></ol><p>我们直接打开：<code>https://hashcat.net/wiki/doku.php?id=example_hashes#legacy_hash_types</code></p><p><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/image-20230203132951575.png" alt="image-20230203132951575"></p><p>得知我攻击的类型应该为<code>8900</code></p><ol start="2"><li>后面不是给了我们一个攻击示例</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SCRYPT:1024:1:1:MDIwMzMwNTQwNDQyNQ==:5FW+zWivLxgCWj7qLiQbeC8zaNQ+qdO0NUinvqyFcfo=</span><br></pre></td></tr></table></figure><p>经过我百度谷歌查找得知，N&#x3D;1024，r&#x3D;1，p&#x3D;1，后面两个base64分别为<code>salt_base64</code>和<code>crack_hash_base64</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SCRYPT:&lt;N&gt;:&lt;r&gt;:&lt;p&gt;:&lt;salt_base64&gt;:&lt;crack_hash_base64&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>我们先使用<code>CyberChef</code>手动生成一个<code>scrypt_hash</code></li></ol><p>第一步我们需要准备一个salt <code>0203305404425</code> 然后转为base64 <code>MDIwMzMwNTQwNDQyNQ==</code></p><p>我们进行hash的字符串是 <code>123</code></p><p>我们的参数为：<code>N=1024，r=2，p=1，key_lenght=32</code></p><p><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/image-20230203133625034.png" alt="image-20230203133625034"></p><p>我们得到了scrypt-hash：<code>+SXKnuM8hda53j5MEmOuU+lAWINM/4kooVwq5d+HTpg=</code></p><p>对应攻击的scrypt-hash：<code>&#39;SCRYPT:1024:2:1:MDIwMzMwNTQwNDQyNQ==:+SXKnuM8hda53j5MEmOuU+lAWINM/4kooVwq5d+HTpg=&#39;</code></p><ol start="4"><li>使用hashcat攻击，命令如下</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\hashcat.exe -m 8900 -1 123456789 -a 3 <span class="string">&#x27;SCRYPT:1024:2:1:MDIwMzMwNTQwNDQyNQ==:+SXKnuM8hda53j5MEmOuU+lAWINM/4kooVwq5d+HTpg=&#x27;</span> ?1?1?1?1?1?1?1 --increment --increment-min 3 --increment-max 3</span><br></pre></td></tr></table></figure><p>参数解释：</p><p><code>-m 8900</code>，对应我们一开始去网站查表的类型</p><p><code>-1 123456789</code>，我设置了一个自定义的字符集为123456789</p><p><code>SCRYPT:1024:2:1: ... 4kooVwq5d+HTpg=</code>，攻击的scrypt-hash</p><p><code>?1?1?1?1?1?1?1</code>，使用我们自定义的字符集，别问我为什么写那么多，我忘记改了，本来是打算写3个<code>?1</code>的</p><p><code>--increment --increment-min 3 --increment-max 3</code>，最低3个字符，最高也是3个字符，为了节约时间呗</p><ol start="5"><li>如图可以看见攻击成功</li></ol><p><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/image-20230203134255450.png" alt="image-20230203134255450"></p><p><code>SCRYPT:1024:2:1:MDIwMzMwNTQwNDQyNQ==:+SXKnuM8hda53j5MEmOuU+lAWINM/4kooVwq5d+HTpg=:123</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 手机图案密码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>N0wayBack 春节红包题</title>
       <link href="/posts/17560.html"/>
       <url>/posts/17560.html</url>
