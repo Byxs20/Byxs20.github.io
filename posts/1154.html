@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>隐写总结 | Byxs20's Blog</title><meta name="author" content="Byxs20"><meta name="copyright" content="Byxs20"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.SilentEye支持类型：PNG、JPG、JPEG、BMP、TIF、TIFF、&#x3D;&#x3D;WAV&#x3D;&#x3D; 虽然可以隐写PNG格式，但是隐写保存的格式只能为JPG或者BMP  JPG类型特征：    如果你碰到了如下的图片，有很多小圆圈，那你用stegsolve也会看到很多的小圆圈，所以你就不要再去使用 stegsolve 去看通道了，直接大胆点盲猜图片被Silen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="隐写总结">
+<meta property="og:url" content="https://byxs20.github.io/posts/1154.html">
+<meta property="og:site_name" content="Byxs20&#39;s Blog">
+<meta property="og:description" content="1.SilentEye支持类型：PNG、JPG、JPEG、BMP、TIF、TIFF、&#x3D;&#x3D;WAV&#x3D;&#x3D; 虽然可以隐写PNG格式，但是隐写保存的格式只能为JPG或者BMP  JPG类型特征：    如果你碰到了如下的图片，有很多小圆圈，那你用stegsolve也会看到很多的小圆圈，所以你就不要再去使用 stegsolve 去看通道了，直接大胆点盲猜图片被Silen">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_4.jpg">
+<meta property="article:published_time" content="2023-02-06T07:35:00.000Z">
+<meta property="article:modified_time" content="2023-02-06T07:35:00.000Z">
+<meta property="article:author" content="Byxs20">
+<meta property="article:tag" content="记录">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_4.jpg"><link rel="shortcut icon" href="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/Logo.ico"><link rel="canonical" href="https://byxs20.github.io/posts/1154.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="DxSVzKuIXVEko-cr-O5f6P2sKU-yK2FDtPVL3Pnc9Gg"/><meta name="baidu-site-verification" content="codeva-7HL7FLEpRD"/><meta name="msvalidate.01" content="569E8CD22D0DED950066464F6E3B2FD8"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '隐写总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-02-06 15:35:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/photo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_4.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Byxs20's Blog"><span class="site-name">Byxs20's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">隐写总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-06T07:35:00.000Z" title="发表于 2023-02-06 15:35:00">2023-02-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-06T07:35:00.000Z" title="更新于 2023-02-06 15:35:00">2023-02-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="隐写总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-SilentEye"><a href="#1-SilentEye" class="headerlink" title="1.SilentEye"></a>1.SilentEye</h1><p><strong>支持类型：PNG、JPG、JPEG、BMP、TIF、TIFF、&#x3D;&#x3D;WAV&#x3D;&#x3D;</strong></p>
+<p><strong>虽然可以隐写PNG格式，但是隐写保存的格式只能为JPG或者BMP</strong></p>
+<ol>
+<li>JPG类型特征：</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/silenteye.jpg" alt="silenteye"></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221108082326638.png" alt="image-20221108082326638"></p>
+<p>如果你碰到了如下的图片，有很多小圆圈，那你用<code>stegsolve</code>也会看到很多的小圆圈，所以你就不要再去使用 <code>stegsolve</code> 去看通道了，直接大胆点盲猜图片被<code>SilentEye</code> 工具隐写了（图片来之[SICTF2023 Misc 王八树木]）</p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20230119140407725.png" alt="image-20230119140407725"></p>
+<p>该题的层结构大小从上往下依次为<code>0x45, 0x45, 0x13, 0x21, 0xB7, 0x21, 0xB7</code>（注意：这个不是一定主要的技巧是使用 <code>stegsolve</code> 看通道）</p>
+<ol start="2">
+<li>BMP类型没有太多特征</li>
+</ol>
+<br>
+
+<h1 id="2-wbStego4"><a href="#2-wbStego4" class="headerlink" title="2.wbStego4"></a>2.wbStego4</h1><p><strong>支持类型：BMP、RLE、PDF（常见）</strong></p>
+<ol>
+<li>BMP类型特征：</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/wbStego4.jpg" alt="wbStego4"></p>
+<p>最低位有明显隐写特征</p>
+<ol start="2">
+<li>PDF类型特征：</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/wb4_pdf.jpg" alt="wb4_pdf"></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/wb4_pdf2.jpg" alt="wb4_pdf2"></p>
+<p>有明显的：<code>09 09 09 20 20 09 20 09 0D</code>的字节特征，主要字节是<code>09 20 0D</code>。</p>
+<p>以下内容来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/sherlson/articles/15851383.html">https://www.cnblogs.com/sherlson/articles/15851383.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">wbStego4open是一个隐写开源工具，它支持Windows和Linux平台。</span><br><span class="line">你可以用wbStego4open可以把文件隐藏到BMP、TXT、HTM和PDF文件中，且不会被看出破绽。</span><br><span class="line">还可以用它来创建版权标识文件并嵌入到文件中将其隐藏。</span><br><span class="line">wbStego在插入数据时（此处以非加密的版权信息为例），充分利用了插入法和LSB修改法两种技术。</span><br><span class="line">wbStego4open会把插入数据中的每一个ASCII码转换为二进制形式，</span><br><span class="line">然后把每一个二进制数字再替换为十六进制的20或者09，20代表0，09代表1。</span><br><span class="line">例如，在wbStego4open的版权管理器（Copyright Manager）中，输入一个包含“Oblivion”的地址，</span><br><span class="line">wbStego4open就会将其由ASCII码转换成相应的二进制码，</span><br><span class="line">然后再用0x20和0x09替换每个二进制数。</span><br></pre></td></tr></table></figure>
+
+<p>如何判断是否文件采用<code>wbStego4open</code>加密？</p>
+<ol>
+<li>将文件导入010editor、winhex之类的十六进制查看工具</li>
+<li>如果<code>20</code>、<code>09</code>出现次数较多，则有可能为<code>wbStego4open</code>加密</li>
+<li><strong>当隐写的内容很少的时候大概率没有20、09出现最多的特征了，最好参考上图的字节特征。</strong></li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221202162449054.png" alt="image-20221202162449054"></p>
+<br>
+
+<h1 id="3-cloacked-pixel"><a href="#3-cloacked-pixel" class="headerlink" title="3.cloacked-pixel"></a>3.cloacked-pixel</h1><p><strong>支持类型：PNG、JPG(隐写后自动转换为PNG)</strong></p>
+<p>特征如下：</p>
+<ol>
+<li>IDAT层大小</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221115180358321.png" alt="image-20221115180358321"></p>
+<p>IDAT结构大小会为0x1000C，其中length占4字节，IDAT标记占4字节，内容占65536字节，CRC32占4字节。</p>
+<p><code>65536 + length + IDAT + CRC32 = 0x1000C</code>，也就是每个IDAT层会被装满。</p>
+<ol start="2">
+<li>图片位深度32位，但是你使用<code>StegSolve</code>观察图片的时候，Alpha通道全部都是255，也就是白色。</li>
+</ol>
+<br>
+
+<h1 id="4-steghide"><a href="#4-steghide" class="headerlink" title="4.steghide"></a>4.steghide</h1><p><strong>支持类型：JPG</strong></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221115190104544.png" alt="image-20221115190104544"></p>
+<p>层大小从上往下依次为<code>0x45, 0x45, 0x13, 0x21, 0xB7, 0x21, 0xB7</code></p>
+<br>
+
+<h1 id="5-outguess"><a href="#5-outguess" class="headerlink" title="5.outguess"></a>5.outguess</h1><p><strong>支持类型：JPG</strong></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221115190104544.png" alt="image-20221115190104544"></p>
+<p>层大小从上往下依次为<code>0x45, 0x45, 0x13, 0x21, 0xB7, 0x21, 0xB7</code></p>
+<br>
+
+<h1 id="6-stegpy"><a href="#6-stegpy" class="headerlink" title="6.stegpy"></a>6.stegpy</h1><p><strong>支持类型：PNG、JPG、GIF、BMP、WEBP、&#x3D;&#x3D;WAV&#x3D;&#x3D;</strong></p>
+<p><strong>除了PNG格式其他的图片格式隐写后自动转换为PNG</strong></p>
+<p>特征如下：</p>
+<ol>
+<li>IDAT层大小</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221115180358321.png" alt="image-20221115180358321"></p>
+<p>IDAT结构大小会为0x1000C，其中length占4字节，IDAT标记占4字节，内容占65536字节，CRC32占4字节。</p>
+<p><code>65536 + length + IDAT + CRC32 = 0x1000C</code>，也就是每个IDAT层会被装满。</p>
+<ol start="2">
+<li>图片位深度32位，但是你使用<code>StegSolve</code>观察图片的时候，Alpha通道全部都是255，也就是白色。</li>
+</ol>
+<br>
+
+<h1 id="7-jphide"><a href="#7-jphide" class="headerlink" title="7.jphide"></a>7.jphide</h1><p><strong>支持类型：JPG、JPEG</strong></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118192116807.png" alt="image-20221118192116807"></p>
+<p>层大小从上往下依次为<code>0x45, 0x45, 0x13, 0x21, 0x8D, 0x21, 0x84</code></p>
+<br>
+
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118193139991.png" alt="image-20221118193139991"></p>
+<p>bugku奇怪的压缩包中的<code>xiaoxiaoshumu.jpg</code>，也出现了不一样的情况</p>
+<p>层大小从上往下依次为<code>0x45, 0x45, 0x13, 0x1E, 0x53, 0x1C, 0x2A</code></p>
+<br>
+
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221209130453397.png" alt="image-20221209130453397"></p>
+<p>首届“天权信安&amp;catf1ag”网络安全联合公开赛中的一题<code>嘿嘿.jpg</code>，也出现了不一样情况</p>
+<p>层大小从上往下依次为<code>0x45, 0x45, 0x13, 0x1E, 0x4D, 0x1B, 0x25</code></p>
+<br>
+
+<h1 id="8-Free-File-Camouflage"><a href="#8-Free-File-Camouflage" class="headerlink" title="8.Free File Camouflage"></a>8.Free File Camouflage</h1><p><strong>支持类型：JPG</strong></p>
+<ol>
+<li>尾部会出现很多base64字段</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118193524649.png" alt="image-20221118193524649"></p>
+<ol start="2">
+<li>如果隐写的内容较少会出现，你会看见尾部的特征结构如下：</li>
+</ol>
+<p><code>FF D9</code> + <code>第一段base64</code> + <code>0D 0A</code> +  <code>第二段base64</code> + <code>0D 0A</code></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118193630649.png" alt="image-20221118193630649"></p>
+<br>
+
+<h1 id="9-DeEgger-Embedder"><a href="#9-DeEgger-Embedder" class="headerlink" title="9.DeEgger Embedder"></a>9.DeEgger Embedder</h1><p><strong>支持类型：PNG、JPG</strong></p>
+<p><strong>PNG特征：</strong></p>
+<ol>
+<li>尾部会出现很多无意义的字符</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118194554713.png" alt="image-20221118194554713"></p>
+<ol start="2">
+<li>IDAT层的大小都为<code>0x200C</code>（除了最后一层IDAT）</li>
+</ol>
+<p><strong>JPG特征：</strong></p>
+<ol>
+<li>尾部会出现很多无意义的字符</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221118194949346.png" alt="image-20221118194949346"></p>
+<br>
+
+<h1 id="10-F5-steganography"><a href="#10-F5-steganography" class="headerlink" title="10.F5-steganography"></a>10.F5-steganography</h1><p>特征：<strong>早期F5算法总插入</strong><code>AJPEG Encoder Copyright 1998, James R. Weeks and BioElectroMech.</code></p>
+<p>命令<code>java Extract 图片名称 (-p password)</code>会生成output.txt，隐写内容就在里面。</p>
+<br>
+
+<h1 id="11-OurSecret"><a href="#11-OurSecret" class="headerlink" title="11.OurSecret"></a>11.OurSecret</h1><ol>
+<li>JPG特征：</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221208221306007.png" alt="image-20221208221306007"></p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221208221342521.png" alt="image-20221208221342521"></p>
+<p>特征是这个<code>ž—º*</code>，会在jpg文件层结束后出现。</p>
+<p>尾部特征是<code>l&lt;9l0kl10n88j:8&lt;....</code></p>
+<br>
+
+<ol start="2">
+<li>PNG特征：</li>
+</ol>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221208221706530.png" alt="image-20221208221706530"></p>
+<p>和上述的JPG特征一样。</p>
+<br>
+
+<h1 id="12-JSteg"><a href="#12-JSteg" class="headerlink" title="12.JSteg"></a>12.JSteg</h1><p>JPG特征：</p>
+<p><img src="/%E9%9A%90%E5%86%99%E6%80%BB%E7%BB%93.assets/image-20221213144232849.png" alt="image-20221213144232849"></p>
+<p>层大小从上往下依次为<code>0x86, 0x13, 0x1A4</code></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://byxs20.github.io">Byxs20</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://byxs20.github.io/posts/1154.html">https://byxs20.github.io/posts/1154.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://byxs20.github.io" target="_blank">Byxs20's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%B0%E5%BD%95/">记录</a></div><div class="post_share"><div class="social-share" data-image="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/10343.html" title="解密总结"><img class="cover" src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_26.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">解密总结</div></div></a></div><div class="next-post pull-right"><a href="/posts/44904.html" title="配置WSL2和Misc各种工具"><img class="cover" src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">配置WSL2和Misc各种工具</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/10343.html" title="解密总结"><img class="cover" src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_26.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-06</div><div class="title">解密总结</div></div></a></div><div><a href="/posts/44904.html" title="配置WSL2和Misc各种工具"><img class="cover" src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-04</div><div class="title">配置WSL2和Misc各种工具</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/photo.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Byxs20</div><div class="author-info__description">得救之道,就在其中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/183379727?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili"></i><span>BillBill</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Byxs20" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=97766819&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="mailto:97766819@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_47875210?type=blog" target="_blank" title="CSDN"><i class="fa-solid fa-blog"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">以后不再使用CSDN博客更新文章了<br>期待我的更新请收藏该链接 以防走丢哦!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-SilentEye"><span class="toc-text">1.SilentEye</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-wbStego4"><span class="toc-text">2.wbStego4</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-cloacked-pixel"><span class="toc-text">3.cloacked-pixel</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-steghide"><span class="toc-text">4.steghide</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-outguess"><span class="toc-text">5.outguess</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-stegpy"><span class="toc-text">6.stegpy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-jphide"><span class="toc-text">7.jphide</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-Free-File-Camouflage"><span class="toc-text">8.Free File Camouflage</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-DeEgger-Embedder"><span class="toc-text">9.DeEgger Embedder</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10-F5-steganography"><span class="toc-text">10.F5-steganography</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-OurSecret"><span class="toc-text">11.OurSecret</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#12-JSteg"><span class="toc-text">12.JSteg</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/10343.html" title="解密总结"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_26.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解密总结"/></a><div class="content"><a class="title" href="/posts/10343.html" title="解密总结">解密总结</a><time datetime="2023-02-06T07:35:00.000Z" title="发表于 2023-02-06 15:35:00">2023-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1154.html" title="隐写总结"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="隐写总结"/></a><div class="content"><a class="title" href="/posts/1154.html" title="隐写总结">隐写总结</a><time datetime="2023-02-06T07:35:00.000Z" title="发表于 2023-02-06 15:35:00">2023-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/44904.html" title="配置WSL2和Misc各种工具"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="配置WSL2和Misc各种工具"/></a><div class="content"><a class="title" href="/posts/44904.html" title="配置WSL2和Misc各种工具">配置WSL2和Misc各种工具</a><time datetime="2023-02-04T12:00:00.000Z" title="发表于 2023-02-04 20:00:00">2023-02-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/20175.html" title="西湖论剑2023-Misc-WriteUp"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_21.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西湖论剑2023-Misc-WriteUp"/></a><div class="content"><a class="title" href="/posts/20175.html" title="西湖论剑2023-Misc-WriteUp">西湖论剑2023-Misc-WriteUp</a><time datetime="2023-02-03T10:00:00.000Z" title="发表于 2023-02-03 18:00:00">2023-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/38185.html" title="实战攻击手机PIN和图案密码"><img src="https://byxs20-picture-for-typora.oss-cn-hangzhou.aliyuncs.com/img_for_typora/cover/cover_13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="实战攻击手机PIN和图案密码"/></a><div class="content"><a class="title" href="/posts/38185.html" title="实战攻击手机PIN和图案密码">实战攻击手机PIN和图案密码</a><time datetime="2023-02-03T08:13:00.000Z" title="发表于 2023-02-03 16:13:00">2023-02-03</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Byxs20</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">簡</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
